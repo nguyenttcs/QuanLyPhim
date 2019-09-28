@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>CYBERSOFT HOMEWORK</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/menu.css" />
+</head>
+
+<body style="background: #fff">
+  <div class="wrap">
+    <span class="decor"></span>
+    <nav>
+      <ul class="primary">
+        <li>
+          <a href="">Phim Lẻ</a>
+          <ul class="sub">
+            <li><a href="">Phim lẻ 1</a></li>
+            <li><a href="">Phim lẻ 1</a></li>
+            <li><a href="">Phim lẻ 1</a></li>
+            <li><a href="">Phim lẻ 1</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Phim hành động</a>
+          <ul class="sub">
+            <li><a href="">Phim hành động 1</a></li>
+            <li><a href="">Phim hành động 2</a></li>
+            <li><a href="">Phim hành động 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Phim bộ</a>
+          <ul class="sub">
+            <li><a href="">Phim bộ 1</a></li>
+            <li><a href="">Phim bộ 1</a></li>
+            <li><a href="">Phim bộ 1</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Phim Rạp</a>
+          <ul class="sub">
+            <li><a href="">Phim rạp 1</a></li>
+            <li><a href="">Phim rạp 1</a></li>
+            <li><a href="">Phim rạp 1</a></li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h3>Bài tập quản lý danh mục phim CYBERSOFT</h3>
+    <div class="container text-left w-50">
+      <div class="form-group">
+        <span>Mã danh mục</span>
+        <input id="MaDanhMuc" class="form-control"/>
+      </div>
+      <div class="form-group">
+          <span>Tên danh mục</span>
+          <input id="TenDanhMuc" class="form-control"/>
+      </div>
+      <div class="form-group">
+         <button class="btn btn-success" id="btnThemDanhMuc">Thêm danh mục</button>
+         <button class="btn btn-success" id="btnLuu">Cập nhật danh mục</button>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Mã danh mục</th>
+          <th>Tên danh mục</th>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody id="tblDanhMucPhim">
+          <tr>
+            <td>PhimLe</td>
+            <td>Phim lẻ</td>
+            <td>
+              <button class="btn btn-success">Sửa</button>
+              <button class="btn btn-danger">Xóa</button>
+              <button class="btn btn-success" data-toggle="modal" data-target="#modelId">Menu Item</button>            
+            </td>
+          </tr>
+          <tr>
+              <td>PhimBo</td>
+              <td>Phim bộ</td>
+              <td>
+                  <button class="btn btn-success">Sửa</button>
+                  <button class="btn btn-danger">Xóa</button>
+                  <button class="btn btn-success" data-toggle="modal" data-target="#modelId">Menu Item</button>               
+              </td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+
+              </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Danh mục phim lẻ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body text-left">
+          <div class="container">
+            <div class="form-group">
+              <span>Mã</span>
+              <input id="ma" class="form-control" />
+            </div>
+            <div class="form-group">
+                <span>Tên</span>
+                <input id="ten" class="form-control" />
+              </div>
+            <div class="form-group">
+              <button id="btnThemDanhMucCon" class="btn btn-primary">Thêm danh mục con</button>
+              <button id="btnCapNhatDanhMucCon" class="btn btn-success">Cập nhật danh mục con</button>
+            </div>
+          </div>
+          <table class="table">
+              <thead>
+                <tr>
+                  <th>Mã danh mục (con)</th>
+                  <th>Tên danh mục (con)</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="tblDanhMucPhimCon">
+                  <tr>
+                    <td>Phim lẻ 2015</td>
+                    <td>
+                      <button>Sửa</button>
+                      <button>Xóa</button>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>Phim lẻ 2015</td>
+                      <td>
+                        <button>Sửa</button>
+                        <button>Xóa</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Phim lẻ 2015</td>
+                      <td>
+                        <button>Sửa</button>
+                        <button>Xóa</button>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+     
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+  <!-- Import my JS -->
+  <script src="./Models/DanhMucPhim.js"></script>
+  <script src="./Models/TongDanhMucPhim.js"></script>
+  <script src="./Controllers/index.js"></script>
+</body>
+
+</html>

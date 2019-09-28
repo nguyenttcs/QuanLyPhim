@@ -1,0 +1,70 @@
+[
+  {"maDanhMucPhim":"TheLoai",
+    "tenDanhMucPhim":"Thể loại",
+    "DanhMucPhim":[
+      {"ma":"PhimHanhDong",
+       "ten":"Phim hành động"
+      },
+      {"ma":"PhimMa",
+        "ten":"Phim ma"
+       },
+       {"ma":"PhimTinhCam",
+        "ten":"Phim tình cảm"
+       }, 
+       {"ma":"PhimKiemHiep",
+        "ten":"Phim Kiếm Hiệp"
+       }
+    ]
+  },
+  {"maDanhMucPhim":"PhimLe",
+    "tenDanhMucPhim":"Phim lẻ",
+    "DanhMucPhim":[
+      {"ma":"PhimLe2016",
+       "ten":"Phim lẻ 2016"
+      },
+      {"ma":"PhimLe2017",
+        "ten":"Phim lẻ 2017"
+       },
+       {"ma":"PhimLe2018",
+        "ten":"Phim lẻ 2018"
+       }, 
+       {"ma":"PhimLe2019",
+        "ten":"Phim lẻ 2019"
+       }
+    ]
+  },
+  {"maDanhMucPhim":"PhimBo",
+    "tenDanhMucPhim":"Phim bộ",
+    "DanhMucPhim":[
+      {"ma":"PhimBoHanQuoc",
+       "ten":"Phim bộ hàn quốc"
+      },
+      {"ma":"PhimBoTrungQuoc",
+        "ten":"Phim bộ trung quốc"
+       },
+       {"ma":"PhimBoMy",
+        "ten":"Phim bộ mỹ"
+       }, 
+       {"ma":"PhimHongKong",
+        "ten":"Phim Hồng Kong"
+       }
+    ]
+  },
+  {"maDanhMucPhim":"PhimChieuRap",
+    "tenDanhMucPhim":"Phim chiếu rạp",
+    "DanhMucPhim":[
+      {"ma":"PhimHotThang6",
+       "ten":"Phim hot tháng 6"
+      },
+      {"ma":"PhimHotThang7",
+        "ten":"Phim ho tháng 7"
+       },
+       {"ma":"PhimHotThang8",
+        "ten":"Phim hot tháng 8"
+       }, 
+       {"ma":"PhimHotThang9",
+        "ten":"Phim hot tháng 9"
+       }
+    ]
+  }
+]
